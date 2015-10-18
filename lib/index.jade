@@ -7,7 +7,7 @@ head
 body
 	h2(class="Titlegeneral") Peso Real vs Peso Esperado
 	div(class="General")
-		div(class="layout")
+		div(class="Layout")
 			section(class = "Principalgeneral")
 				section(class ="Boxgeneral")
 					div(class="Boxgeneral-id") 
@@ -17,4 +17,5 @@ body
 					div(class="Boxgeneral-variation") Variación
 			section(class = "Principalbox")
 				include ./box/template.jade																										
-			
+		div(class="Boxgraphic")
+			canvas(width="650" height="500" id="graphic" class="Boxgraphic-canvas") 	
