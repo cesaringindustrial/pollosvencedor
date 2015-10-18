@@ -1,6 +1,7 @@
 function inicio()
 {
     var t=document.getElementById("graphic");
+
     var textcanvas= t.getContext("2d");
     lienzo = t.getContext("2d");
     textcanvas.font="bold 10px sans-serif";
@@ -25,4 +26,5 @@ function inicio()
 	lienzo.strokeStyle= "rgba(127, 127, 185, 1)"; 
 	lienzo.closePath();
 	lienzo.stroke();
-}	
+}
+	

@@ -19,10 +19,14 @@ body
 					div(class="Boxgeneral-variation") Variación
 			section(class = "Principalbox")
 				include ./box/template.jade																										
-		div(class="Boxgraphic")
-			canvas(width="650" height="500" id="graphic" class="Boxgraphic-canvas")
-			script(type="text/javascript").
-				inicio();	
+		div(class="Info")
+			div(class="Button")
+				input(type="button" id="Buttongraphic" value="Graficar" class="Button-graphic")
+			div(class="Boxgraphic")
+				canvas(width="650" height="500" id="graphic" class="Boxgraphic-canvas")
+				script(type="text/javascript").
+					inicio();
+						
 
 		
 
