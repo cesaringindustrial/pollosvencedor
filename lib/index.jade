@@ -3,7 +3,9 @@ html(lang ="es")
 head
 	meta(charset="uft-8")
 	title Real vs Esperado
+	script(type="application/javascript", src="./public/js/template.js")
 	link(rel="stylesheet", href="./public/css/app.css")
+
 body
 	h2(class="Titlegeneral") Peso Real vs Peso Esperado
 	div(class="General")
@@ -18,4 +20,11 @@ body
 			section(class = "Principalbox")
 				include ./box/template.jade																										
 		div(class="Boxgraphic")
-			canvas(width="650" height="500" id="graphic" class="Boxgraphic-canvas") 	
+			canvas(width="650" height="500" id="graphic" class="Boxgraphic-canvas")
+			script(type="text/javascript").
+				inicio();	
+
+		
+
+
+
