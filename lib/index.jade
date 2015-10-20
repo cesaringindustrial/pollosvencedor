@@ -7,25 +7,12 @@ head
 	link(rel="stylesheet", href="./public/css/app.css")
 
 body
-	h2(class="Titlegeneral") Peso Real vs Peso Esperado
+	h2(class="Titlegeneral") Bogota
 	div(class="General")
 		div(class="Layout")
-			section(class = "Principalgeneral")
-				section(class ="Boxgeneral")
-					div(class="Boxgeneral-id") 
-					div(class="Boxgeneral-description")
-					div(class="Boxgeneral-real") Real
-					div(class="Boxgeneral-expected") Esperado
-					div(class="Boxgeneral-variation") Variación
-			section(class = "Principalbox")
-				include ./box/template.jade																										
-		div(class="Info")
-			div(class="Button")
-				input(type="button" id="Buttongraphic" value="Graficar" class="Button-graphic")
-			div(class="Boxgraphic")
-				canvas(width="650" height="500" id="graphic" class="Boxgraphic-canvas")
-				script(type="text/javascript").
-					inicio();
+			include ./box-general/template.jade		
+			include ./box/template.jade																										
+		
 						
 
 		
