@@ -1,4 +1,6 @@
 var b;
+var RangoMax=120;
+var RangoMin=80;
 function inicio()
 {
     var Order_A1=document.getElementById("Order_A1");
@@ -128,7 +130,12 @@ function inicio()
 	var TotalFulfillment= (Total_Delivery/Total_order)*100;
 	var t= TotalFulfillment.toFixed(1);
 	document.getElementById("Fulfillment_total").value=t+"%";
-	
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_total").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_total").className = "test";
+	}
 	
  	}
 
@@ -137,134 +144,289 @@ function inicio()
 	var A3= (A2/A1)*100;
 	var t= A3.toFixed(1);
 	document.getElementById("Fulfillment_A3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_A3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_A3").className = "test";
+	}
 
  	}
  	if(B1>"" && B2>""){
 	var B3= (B2/B1)*100;
 	var t= B3.toFixed(1);
 	document.getElementById("Fulfillment_B3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_B3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_B3").className = "test";
+	}
  	}
  	if(C1>"" && C2>""){
 	var C3= (C2/C1)*100;
 	var t= C3.toFixed(1);
 	document.getElementById("Fulfillment_C3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_C3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_C3").className = "test";
+	}
  	}
  	if(D1>"" && D2>""){
 	var D3= (D2/D1)*100;
 	var t= D3.toFixed(1);
 	document.getElementById("Fulfillment_D3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_D3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_D3").className = "test";
+	}
  	}
  	if(E1>"" && E2>""){
 	var E3= (E2/E1)*100;
 	var t= E3.toFixed(1);
 	document.getElementById("Fulfillment_E3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_E3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_E3").className = "test";
+	}
  	}
  	if(F1>"" && F2>""){
 	var F3= (F2/F1)*100;
 	var t= F3.toFixed(1);
 	document.getElementById("Fulfillment_F3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_F3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_F3").className = "test";
+	}
  	}
  	
  	if(G1>"" && G2>""){
 	var G3= (G2/G1)*100;
 	var t= G3.toFixed(1);
 	document.getElementById("Fulfillment_G3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_G3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_G3").className = "test";
+	}
  	}
  	if(H1>"" && H2>""){
 	var H3= (H2/H1)*100;
 	var t= H3.toFixed(1);
 	document.getElementById("Fulfillment_H3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_H3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_H3").className = "test";
+	}
  	}
  	if(I1>"" && I2>""){
 	var I3= (I2/I1)*100;
 	var t= I3.toFixed(1);
 	document.getElementById("Fulfillment_I3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_I3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_I3").className = "test";
+	}
  	}
  	if(J1>"" && J2>""){
 	var J3= (J2/J1)*100;
 	var t= J3.toFixed(1);
 	document.getElementById("Fulfillment_J3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_J3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_J3").className = "test";
+	}
  	}
  	if(J1>"" && K2>""){
 	var K3= (K2/K1)*100;
 	var t= K3.toFixed(1);
 	document.getElementById("Fulfillment_K3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_K3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_K3").className = "test";
+	}
  	}
  	if(L1>"" && L2>""){
 	var L3= (L2/L1)*100;
 	var t= L3.toFixed(1);
 	document.getElementById("Fulfillment_L3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_L3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_L3").className = "test";
+	}
  	}
  	if(M1>"" && M2>""){
 	var M3= (M2/M1)*100;
 	var t= M3.toFixed(1);
 	document.getElementById("Fulfillment_M3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_M3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_M3").className = "test";
+	}
  	}
  	if(N1>"" && N2>""){
 	var N3= (N2/N1)*100;
 	var t= N3.toFixed(1);
 	document.getElementById("Fulfillment_N3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_N3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_N3").className = "test";
+	}
  	}
  	if(O1>"" && O2>""){
 	var O3= (O2/O1)*100;
 	var t= O3.toFixed(1);
 	document.getElementById("Fulfillment_O3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_O3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_O3").className = "test";
+	}
  	}
  	if(P1>"" && P2>""){
 	var P3= (P2/P1)*100;
 	var t= P3.toFixed(1);
 	document.getElementById("Fulfillment_P3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_P3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_P3").className = "test";
+	}
  	}
  	if(Q1>"" && Q2>""){
 	var Q3= (Q2/Q1)*100;
 	var t= Q3.toFixed(1);
 	document.getElementById("Fulfillment_Q3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_Q3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_Q3").className = "test";
+	}
  	}
  	if(R1>"" && R2>""){
 	var R3= (R2/R1)*100;
 	var t= R3.toFixed(1);
 	document.getElementById("Fulfillment_R3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_R3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_R3").className = "test";
+	}
  	}
  	if(S1>"" && S2>""){
 	var S3= (S2/S1)*100;
 	var t= S3.toFixed(1);
 	document.getElementById("Fulfillment_S3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_S3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_S3").className = "test";
+	}
  	}
  	if(T1>"" && T2>""){
 	var T3= (T2/T1)*100;
 	var t= T3.toFixed(1);
 	document.getElementById("Fulfillment_T3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_T3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_T3").className = "test";
+	}
  	}
  	if(U1>"" && U2>""){
 	var U3= (U2/U1)*100;
 	var t= U3.toFixed(1);
 	document.getElementById("Fulfillment_U3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_U3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_U3").className = "test";
+	}
  	}
  	if(V1>"" && V2>""){
 	var V3= (V2/V1)*100;
 	var t= V3.toFixed(1);
 	document.getElementById("Fulfillment_V3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_V3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_V3").className = "test";
+	}
  	}
  	if(W1>"" && W2>""){
 	var W3= (W2/W1)*100;
 	var t= W3.toFixed(1);
 	document.getElementById("Fulfillment_W3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_W3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_W3").className = "test";
+	}
  	}
  	if(X1>"" && X2>""){
 	var X3= (X2/X1)*100;
 	var t= X3.toFixed(1);
 	document.getElementById("Fulfillment_X3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_X3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_X3").className = "test";
+	}
  	}
  	if(Y1>"" && Y2>""){
 	var Y3= (Y2/Y1)*100;
 	var t= Y3.toFixed(1);
 	document.getElementById("Fulfillment_Y3").value=t+"%";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_Y3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_Y3").className = "test";
+	}
  	}
  	if(Z1>"" && Z2>""){
 	var Z3= (Z2/Z1)*100;
 	var t= Z3.toFixed(1);
 	document.getElementById("Fulfillment_Z3").value=t+"%";
-	document.getElementById("Fulfillment_Z3").className = "test";
+	if(t>RangoMax){
+		document.getElementById("Fulfillment_Z3").className = "test";
+	}
+	if(t<RangoMin){
+		document.getElementById("Fulfillment_Z3").className = "test";
+	}
 	
  	}
  	
