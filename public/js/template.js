@@ -128,6 +128,8 @@ function inicio()
 	var TotalFulfillment= (Total_Delivery/Total_order)*100;
 	var t= TotalFulfillment.toFixed(1);
 	document.getElementById("Fulfillment_total").value=t+"%";
+	
+	
  	}
 
  	
@@ -135,6 +137,7 @@ function inicio()
 	var A3= (A2/A1)*100;
 	var t= A3.toFixed(1);
 	document.getElementById("Fulfillment_A3").value=t+"%";
+
  	}
  	if(B1>"" && B2>""){
 	var B3= (B2/B1)*100;
@@ -261,9 +264,13 @@ function inicio()
 	var Z3= (Z2/Z1)*100;
 	var t= Z3.toFixed(1);
 	document.getElementById("Fulfillment_Z3").value=t+"%";
+	document.getElementById("Fulfillment_Z3").className = "test";
+	
  	}
  	
 }
+
+		
 	
 	
 
