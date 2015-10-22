@@ -53,6 +53,9 @@ function inicio()
     var Delivery_Y2=document.getElementById("Delivery_Y2");
     var Order_Z1=document.getElementById("Order_Z1");
     var Delivery_Z2=document.getElementById("Delivery_Z2");
+    var Order_total=document.getElementById("Order_total");
+    var Delivery_total=document.getElementById("Delivery_total");
+    var fulfillment_total=document.getElementById("fulfillment_total");
 
     b=document.getElementById("button");
     b.addEventListener("click", fulfillment);
@@ -111,8 +114,21 @@ function inicio()
  	var Y2=Number(Delivery_Y2.value);
  	var Z1=Number(Order_Z1.value);
  	var Z2=Number(Delivery_Z2.value);
-
+ 	var Totalorder=Number(Order_total.value);
+ 	var TotalDelivery=Number(Delivery_total.value);
+ 	var TotalFulfillment=Number(Fulfillment_total.value);
  
+ 	var Total_order = A1+B1+C1+D1+E1+F1+G1+H1+I1+J1+K1+L1+M1+N1+O1+P1+Q1+R1+S1+T1+U1+V1+W1+X1+Y1+Z1;
+ 	var Total_Delivery = A2+B2+C2+D2+E2+F2+G2+H2+I2+J2+K2+L2+M2+N2+O2+P2+Q2+R2+S2+T2+U2+V2+W2+X2+Y2+Z2;
+
+ 	document.getElementById("Order_total").value=Total_order;
+ 	document.getElementById("Delivery_total").value=Total_Delivery;
+
+ 	if(Total_order>"" && Total_Delivery>""){
+	var TotalFulfillment= (Total_Delivery/Total_order)*100;
+	
+	document.getElementById("Fulfillment_total").value=TotalFulfillment+"%";
+ 	}
 
  	
  	if(A1>"" && A2>""){
@@ -246,6 +262,7 @@ function inicio()
 	
 	document.getElementById("Fulfillment_Z3").value=Z3+"%";
  	}
+ 	
 }
 	
 	
