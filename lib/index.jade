@@ -9,24 +9,16 @@ head
 
 body
 	input(type="button" id="button" value="ACEPTAR")
-		
-	h2(class="Titlegeneral") Bogota
-	div(class="General")
-		div(class="Layout")
-			include ./box-general/template.jade		
-			include ./box/template.jade
+	
+	div
+		h2(class="Titlegeneral") Bogota
+		div(class="General")
+			div(class="Layout")
+				include ./box-general/template.jade		
+				include ./dis-bogota/template.jade
+				
+	
+
 	script.
 		inicio();
-		
-
-		
-
-				
-
-			
-						
-
-		
-
-
-
+	
