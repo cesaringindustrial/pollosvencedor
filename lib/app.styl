@@ -33,6 +33,47 @@ body
 	display flex
 	align-items flex-start
 	
+#container 
+	margin 0 auto
+	width 120px
+
+#accordion input 
+	display none
+
+#accordion label 
+	
+	border-radius .25em
+	cursor pointer
+	display block
+	margin-bottom .125em
+	padding .25em 1em
+	z-index 20
+
+#accordion label:hover 
+	background #ccc
+
+#accordion input:checked + label 
+	
+	border-bottom-right-radius 0
+	border-bottom-left-radius 0
+	color black
+	margin-bottom 0
+
+#accordion article 
+	
+	height 0px
+	overflow hidden
+	z-index 10
+
+#accordion article p 
+	padding 1em
+
+#accordion input:checked ~ article 
+	border-bottom-left-radius .25em
+	border-bottom-right-radius .25em
+	height auto
+	margin-bottom .125em
+
 	
 	
 	
