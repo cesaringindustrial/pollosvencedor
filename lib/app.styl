@@ -6,16 +6,15 @@ body
 	font-family Arial
 	font-size 16px
 	margin 0
-				
+	background rgba(4, 4, 27, 0.97)			
 		
 		
 
 .General
 	display flex
-	align-items flex-start
-	background rgba(4, 4, 27, 0.97)
+	
 	min-height 100vh
-	justify-content space-around
+	font-size 0.6em
 		
 .Layout
 	margin 1 1 0 0
@@ -24,7 +23,7 @@ body
 	border-radius 0.5em	
 		
 .Titlegeneral
-	background rgba(4, 4, 27, 0.97)
+	
 	text-align center
 	color white
 	padding 0
@@ -33,46 +32,13 @@ body
 	display flex
 	align-items flex-start
 	
-#container 
-	margin 0 auto
-	width 120px
+h3 
+	width 210px
+	text-align center
+	border 0.15em solid rgba(127, 127, 185, 1)
+	box-shadow 0 0 10px rgba(220, 214, 214, 0.5)
 
-#accordion input 
-	display none
 
-#accordion label 
-	
-	border-radius .25em
-	cursor pointer
-	display block
-	margin-bottom .125em
-	padding .25em 1em
-	z-index 20
-
-#accordion label:hover 
-	background #ccc
-
-#accordion input:checked + label 
-	
-	border-bottom-right-radius 0
-	border-bottom-left-radius 0
-	color black
-	margin-bottom 0
-
-#accordion article 
-	
-	height 0px
-	overflow hidden
-	z-index 10
-
-#accordion article p 
-	padding 1em
-
-#accordion input:checked ~ article 
-	border-bottom-left-radius .25em
-	border-bottom-right-radius .25em
-	height auto
-	margin-bottom .125em
 
 	
 	
