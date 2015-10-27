@@ -1,30 +1,38 @@
 doctype html
 html(lang ="es")
-head
-	meta(charset="uft-8")
-	title Real vs Esperado
-	script(type="application/javascript", src="./public/js/template.js")
-	link(rel="stylesheet", href="./public/css/app.css")
-	script(type="application/javascript", src="./public/js/jquery.js")
-	style .test{background-color: red; width: 90px;justify-content: space-between; color: white;border: 0.1em solid rgba(127, 127, 185, 1);box-shadow: 0 0 10px rgba(72, 73, 78, 0.5);margin: 0 0 0 0.5em;border-radius: 0.5em;}	
+	head
+		meta(charset="uft-8")
+		title Real vs Esperado
+		script(type="application/javascript", src="./public/js/javascript.js")
+		link(rel="stylesheet", href="./public/css/app.css")
+		script(type="application/javascript", src="./public/js/jquery.js")
+		script(type="application/javascript", src="./public/js/java.js")
+		style .test{background-color: red; width: 90px;justify-content: space-between; color: white;border: 0.1em solid rgba(127, 127, 185, 1);box-shadow: 0 0 10px rgba(72, 73, 78, 0.5);margin: 0 0 0 0.5em;border-radius: 0.5em;}	
 
-body
-	input(type="button" id="button" value="ACEPTAR")
-	div(class="accordion")
-		div(class="")
-			
-		h3(class="Titlegeneral") Bogota
-		div(class="Layout")
-			include ./box-general/template.jade		
-			include ./dis-bogota/template.jade
-	div(class="accordion")
-		h3(class="Titlegeneral") Villavicencio
-		div(class="Layout")
-			include ./box-general/template.jade		
-			include ./dis-vcio/template.jade			
+	body
+		input(type="button" id="button" value="ACEPTAR")
+		div(class="accordion")
+			div(class="Cumplimiento")
+				div(class="Cumplimiento-id") Bogota
+				input(type="text" id="Fulfillment_Bogota" value="" class="Box-fulfillment" style="text-align:center")
+			div(class="Layout")
+				include ./box-general/template.jade		
+				include ./dis-bogota/template.jade
+		div(class="accordion")
+			div(class="Cumplimiento")
+				div(class="Cumplimiento-id") Villavicencio
+				input(type="text" id="Fulfillment_vcio" value="" class="Box-fulfillment" style="text-align:center")
+			div(class="Layout")
+				include ./box-general/template.jade		
+				include ./dis-vcio/template.jade
 		
 
-	script.
-		inicio();
-	script $(document).ready(function(){$("div.accordion> div").hide();$("div.accordion> h3").click(function(){$(this).next().slideToggle(90)})})	
+				
+			
+			
+				
+		
+
+		script.
+			inicio();
 	

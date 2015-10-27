@@ -59,6 +59,7 @@ function inicio()
     var Order_total=document.getElementById("Bogota_Order_total");
     var Delivery_total=document.getElementById("Bogota_Delivery_total");
     var fulfillment_total=document.getElementById("Bogota_fulfillment_total");
+
     ///FIN////
 
     ///INICIO VILLAVICENCIO///
@@ -251,11 +252,15 @@ function inicio()
 	var Bogota_TotalFulfillment= (Bogota_Total_Delivery/Bogota_Total_order)*100;
 	var Bog= Bogota_TotalFulfillment.toFixed(1);
 	document.getElementById("Bogota_Fulfillment_total").value=Bog+"%";
+    document.getElementById("Fulfillment_Bogota").value=Bog+"%";
+
 	if(Bog>RangoMax){
 		document.getElementById("Bogota_Fulfillment_total").className = "test";
+        document.getElementById("Fulfillment_Bogota").className = "test";
 	}
 	if(Bog<RangoMin){
 		document.getElementById("Bogota_Fulfillment_total").className = "test";
+        document.getElementById("Fulfillment_Bogota").className = "test";
 	}
 	
  	}
@@ -273,11 +278,14 @@ function inicio()
 	var Vcio_TotalFulfillment= (Vcio_Total_Delivery/Vcio_Total_order)*100;
 	var Vcio= Vcio_TotalFulfillment.toFixed(1);
 	document.getElementById("Vcio_Fulfillment_total").value=Vcio+"%";
+    document.getElementById("Fulfillment_vcio").value=Vcio+"%";
 	if(Vcio>RangoMax){
 		document.getElementById("Vcio_Fulfillment_total").className = "test";
+        document.getElementById("Fulfillment_vcio").className = "test";
 	}
 	if(Vcio<RangoMin){
 		document.getElementById("Vcio_Fulfillment_total").className = "test";
+        document.getElementById("Fulfillment_vcio").className = "test";
 	}
 	
  	}
@@ -865,8 +873,6 @@ function inicio()
  	}
  	///FIN CASILLAS Bogota/// 
 }
-
-
 
 		
 	
