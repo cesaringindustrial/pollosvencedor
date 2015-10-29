@@ -278,14 +278,14 @@ function inicio()
 	var Vcio_TotalFulfillment= (Vcio_Total_Delivery/Vcio_Total_order)*100;
 	var Vcio= Vcio_TotalFulfillment.toFixed(1);
 	document.getElementById("Vcio_Fulfillment_total").value=Vcio+"%";
-    document.getElementById("Fulfillment_vcio").value=Vcio+"%";
+    document.getElementById("Fulfillment_Vcio").value=Vcio+"%";
 	if(Vcio>RangoMax){
 		document.getElementById("Vcio_Fulfillment_total").className = "test";
-        document.getElementById("Fulfillment_vcio").className = "test";
+        document.getElementById("Fulfillment_Vcio").className = "test";
 	}
 	if(Vcio<RangoMin){
 		document.getElementById("Vcio_Fulfillment_total").className = "test";
-        document.getElementById("Fulfillment_vcio").className = "test";
+        document.getElementById("Fulfillment_Vcio").className = "test";
 	}
 	
  	}
