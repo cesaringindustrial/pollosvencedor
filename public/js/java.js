@@ -10,3 +10,4 @@ $(document).ready(function(){
        $(this).next().slideToggle(90) 
     })
 })
+

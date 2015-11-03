@@ -6,11 +6,22 @@
     <script type="application/javascript" src="./public/js/javascript.js"></script>
     <link rel="stylesheet" href="./public/css/app.css">
     <script type="application/javascript" src="./public/js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="./public/css/tcal.css">
     <script type="application/javascript" src="./public/js/java.js"></script>
     <style>.test{background-color: red; width: 90px;justify-content: space-between; color: white;border: 0.1em solid rgba(127, 127, 185, 1);box-shadow: 0 0 10px rgba(72, 73, 78, 0.5);margin: 0 0 0 0.5em;border-radius: 0.5em;}	</style>
   </head>
   <body>
-    <input type="button" id="button" value="ACEPTAR">
+    <form action="#">
+      <div>
+        <input type="text" name="date" value="" class="tcal">
+      </div>
+    </form>
+    <form action="#">
+      <div>
+        <input type="text" name="date" value="" class="tcal">
+      </div>
+    </form>
+    <input type="button" id="button" value="Cargar datos">
     <div class="accordion1">
       <div class="Cumplimiento">
         <div class="Cumplimiento-id">Cumplimiento</div>
@@ -24,422 +35,487 @@
           </div>
           <div class="Layout">
             <section class="Principalgeneral">
-              <section class="Boxgeneral">
-                <div class="Boxgeneral-id"> </div>
-                <div class="Boxgeneral-description"></div>
-                <div class="Boxgeneral-order">Pedido</div>
-                <div class="Boxgeneral-delivery">Entregado</div>
-                <div class="Boxgeneral-fulfillment">Cumplimiento</div>
+              <section class="Principalbox">
+                <table class="Box">
+                  <tr>
+                    <th class="Boxgeneral-id"> 
+                      <div></div>
+                    </th>
+                    <th class="Boxgeneral-description">
+                      <div> </div>
+                    </th>
+                    <th> 
+                      <div class="Boxgeneral-order">Pedido</div>
+                    </th>
+                    <th>
+                      <div class="Boxgeneral-delivery">Entrega</div>
+                    </th>
+                    <th>
+                      <div class="Boxgeneral-fulfillment">Cumplimiento</div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>A</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_A1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_A2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_A3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>B</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_B1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_B2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_B3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>C</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_C1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_C2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_C3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>D</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_D1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_D2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_D3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>E</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_E1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_E2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_E3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>F</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_F1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_F2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_F3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>G</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_G1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_G2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_G3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>H</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_H1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_H2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_H3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>I</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_I1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_I2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_I3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>J</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_J1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_J2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_J3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>K</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_K1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_K2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_K3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>L</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_L1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_L2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_L3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>M</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_M1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_M2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_M3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>N</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_N1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_N2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_N3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>O</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_O1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_O2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_O3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>P</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_P1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_P2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_P3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>Q</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_Q1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_Q2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_Q3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>R</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_R1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_R2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_R3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>S</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_S1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_S2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_S3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>T</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_T1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_T2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_T3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>U</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_U1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_U2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_U3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>V</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_V1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_V2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_V3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>W</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_W1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_W2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_W3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>X</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_X1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_X2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_X3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>Y</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_Y1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_Y2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_Y3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>Z</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_Z1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_Z2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_Z3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Boxgeneral-id"> 
+                      <div> </div>
+                    </th>
+                    <th class="Boxgeneral-description">
+                      <div> </div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Bogota_Order_total" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Delivery_total" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Bogota_Fulfillment_total" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                </table>
               </section>
             </section>
-            <section class="Principalbox"></section>
-            <section class="Principalbox">
-              <table class="Box">
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">A</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">B</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">C</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">D</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">E</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">F</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">G</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">H</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">I</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">J</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">K</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">L</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">M</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">N</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">O</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">P</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">Q</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">R</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">S</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">T</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">U</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">V</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">W</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">X</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">Y</th>
-                </tr>
-                <tr class="Box1">
-                  <th class="Box-id">1100101</th>
-                  <th class="Box-description">Z</th>
-                </tr>
-              </table>
-            </section>
-            <table class="Box">
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_A1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_A2" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_A3" value="" style="text-align:center" class="Box-order">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_B1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_B2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_B3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_C1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_C2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_C3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_D1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_D2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_D3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_E1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_E2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_E3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_F1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_F2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_F3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_G1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_G2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_G3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_H1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_H2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_H3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_I1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_I2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_I3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_J1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_J2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_J3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_K1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_K2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_K3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_L1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_L2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_L3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_M1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_M2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_M3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_N1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_N2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_N3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_O1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_O2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_O3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_P1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_P2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_P3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_Q1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_Q2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_Q3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_R1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_R2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_R3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_S1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_S2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_S3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_T1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_T2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_T3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_U1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_U2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_U3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_V1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_V2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_V3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_W1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_W2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_W3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_X1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_X2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_X3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_Y1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_Y2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_Y3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_Z1" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_Z2" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_Z3" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-              <tr>
-                <th> 
-                  <input type="text" id="Bogota_Order_total" value="" style="text-align:center" class="Box-order">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Delivery_total" value="" style="text-align:center" class="Box-delivery">
-                </th>
-                <th> 
-                  <input type="text" id="Bogota_Fulfillment_total" value="" style="text-align:center" class="Box-fulfillment">
-                </th>
-              </tr>
-            </table>
           </div>
         </div>
         <div class="accordion">
@@ -449,423 +525,487 @@
           </div>
           <div class="Layout">
             <section class="Principalgeneral">
-              <section class="Boxgeneral">
-                <div class="Boxgeneral-id"> </div>
-                <div class="Boxgeneral-description"></div>
-                <div class="Boxgeneral-order">Pedido</div>
-                <div class="Boxgeneral-delivery">Entregado</div>
-                <div class="Boxgeneral-fulfillment">Cumplimiento
-                  <section class="Principalbox">
-                    <table class="Box">
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">A</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">B</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">C</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">D</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">E</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">F</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">G</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">H</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">I</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">J</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">K</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">L</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">M</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">N</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">O</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">P</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">Q</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">R</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">S</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">T</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">U</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">V</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">W</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">X</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">Y</th>
-                      </tr>
-                      <tr class="Box1">
-                        <th class="Box-id">1100101</th>
-                        <th class="Box-description">Z</th>
-                      </tr>
-                    </table>
-                  </section>
-                  <table class="Box">
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_A1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_A2" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_A3" value="" style="text-align:center" class="Box-order">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_B1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_B2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_B3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_C1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_C2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_C3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_D1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_D2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_D3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_E1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_E2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_E3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_F1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_F2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_F3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_G1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_G2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_G3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_H1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_H2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_H3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_I1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_I2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_I3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_J1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_J2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_J3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_K1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_K2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_K3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_L1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_L2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_L3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_M1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_M2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_M3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_N1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_N2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_N3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_O1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_O2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_O3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_P1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_P2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_P3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_Q1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_Q2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_Q3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_R1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_R2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_R3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_S1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_S2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_S3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_T1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_T2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_T3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_U1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_U2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_U3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_V1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_V2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_V3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_W1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_W2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_W3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_X1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_X2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_X3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_Y1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_Y2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_Y3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_Z1" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_Z2" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_Z3" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                    <tr>
-                      <th> 
-                        <input type="text" id="Vcio_Order_total" value="" style="text-align:center" class="Box-order">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Delivery_total" value="" style="text-align:center" class="Box-delivery">
-                      </th>
-                      <th> 
-                        <input type="text" id="Vcio_Fulfillment_total" value="" style="text-align:center" class="Box-fulfillment">
-                      </th>
-                    </tr>
-                  </table>
-                </div>
+              <section class="Principalbox">
+                <table class="Box">
+                  <tr>
+                    <th class="Boxgeneral-id"> 
+                      <div></div>
+                    </th>
+                    <th class="Boxgeneral-description">
+                      <div> </div>
+                    </th>
+                    <th> 
+                      <div class="Boxgeneral-order">Pedido</div>
+                    </th>
+                    <th>
+                      <div class="Boxgeneral-delivery">Entrega</div>
+                    </th>
+                    <th>
+                      <div class="Boxgeneral-fulfillment">Cumplimiento</div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>A</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_A1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_A2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_A3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>B</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_B1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_B2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_B3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>C</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_C1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_C2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_C3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>D</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_D1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_D2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_D3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>E</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_E1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_E2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_E3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>F</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_F1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_F2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_F3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>G</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_G1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_G2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_G3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>H</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_H1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_H2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_H3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>I</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_I1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_I2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_I3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>J</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_J1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_J2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_J3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>K</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_K1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_K2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_K3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>L</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_L1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_L2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_L3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>M</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_M1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_M2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_M3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>N</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_N1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_N2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_N3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>O</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_O1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_O2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_O3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>P</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_P1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_P2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_P3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>Q</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_Q1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_Q2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_Q3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>R</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_R1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_R2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_R3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>S</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_S1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_S2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_S3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>T</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_T1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_T2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_T3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>U</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_U1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_U2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_U3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>V</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_V1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_V2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_V3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>W</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_W1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_W2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_W3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>X</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_X1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_X2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_X3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>Y</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_Y1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_Y2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_Y3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Box-id"> 
+                      <div>1100101</div>
+                    </th>
+                    <th class="Box-description">
+                      <div>Z</div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_Z1" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_Z2" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_Z3" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                  <tr>
+                    <th class="Boxgeneral-id"> 
+                      <div> </div>
+                    </th>
+                    <th class="Boxgeneral-description">
+                      <div> </div>
+                    </th>
+                    <th> 
+                      <input type="text" id="Vcio_Order_total" value="" style="text-align:center" class="Box-order">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Delivery_total" value="" style="text-align:center" class="Box-delivery">
+                    </th>
+                    <th>
+                      <input type="text" id="Vcio_Fulfillment_total" value="" style="text-align:center" class="Box-fulfillment">
+                    </th>
+                  </tr>
+                </table>
               </section>
             </section>
-            <section class="Principalbox"></section>
           </div>
         </div>
       </div>
